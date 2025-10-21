@@ -1,0 +1,90 @@
+body {
+    text-align: center;
+   background-image: url(https://i.pinimg.com/736x/5b/d1/70/5bd170bb4655992be36d6034b35224fd.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-color: darkslategray;
+   font-family: 'Jersey 10';
+   color: rgb(8, 39, 39);
+   }
+p {
+    font-size: 50px}
+h1 {
+    font-size: 100px}
+h2 {
+    font-size: 50px;
+    float: right;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: -725px;
+}
+#github-link {
+    font-size: 50px;
+    float: right;
+    margin-right: 50px;
+    margin-left: 20px;
+    margin-top: -470px;
+}
+#discord-link {
+    font-size: 50px;
+    float: right;
+    margin-right: 10px;
+    margin-left: 20px;
+    margin-top: -270px;
+}
+#youtube-link {
+    font-size: 50px;
+    margin-right: -1700px;
+    margin-top: 100px;
+}
+#Kanto-link {
+     font-size: 50px;
+     text-align: left;
+     margin-right: auto;
+}
+#Mimikyu-page {
+    font-size: 50px;
+    float: left;
+    margin-left: 60px;
+    margin-top: -920px ;
+}
+.jersey-10-regular {
+  font-family: "Jersey 10", sans-serif;
+  font-weight: 400;
+  font-style: normal;}
+#Quagsire-1 {
+    width: 8%;
+    float: right;
+    margin-left: 10px;
+    margin-right: 20px;
+    margin-top: -900px;
+}
+#Github-profile {
+    width: 7%;
+    float: right;
+    margin-right: 20px;
+    margin-top: -650px;
+}
+#discord {
+   width: 9%;
+    float: right;
+    margin-right: 0px;
+    margin-top: -450px; 
+}
+#youtube-logo {
+    width: 15%;
+    float: right;
+    margin-right: -40px;
+    margin-top: -220px; 
+}
+#kanto-img {
+    width: 10%;
+    margin-right: auto;
+   text-align: left;
+}
+#mimikyu-gif {
+    float: left;
+    width: 10%;
+    margin-right: 30px ;
+    margin-top: -850px ;
+}

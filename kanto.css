@@ -1,0 +1,20 @@
+body {
+    text-align: center;
+    font-family: 'Jersey 10';
+    background-color: darkcyan;
+   }
+   h1 {
+    font-size: 100px;
+   }
+   h2 {
+    font-size: 50px;
+   }
+   #Kanto-Map {
+    width: 20%;
+   }
+   #Bulbasaur-gif {
+    width: 15%;
+   }
+   #charmander-gif{
+    width: 15%
+   }
