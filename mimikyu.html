@@ -6,22 +6,34 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap" rel="stylesheet">
         <link rel="icon" type="image/x-icon" href="https://i.pinimg.com/236x/2f/30/e6/2f30e6ae48cc44111fbd7d1c59e5b245.jpg">
+         <audio id="lavander-town" src="Lavender Town (From ＂Pokémon Red and Blue＂) - Qumu (1080p, h264).mp4" autoplay></audio>
     </head>
-    <body>
-        <img src="https://media1.tenor.com/m/cJAKpAP9gqQAAAAC/mimikyu-pokemon.gif" id="mimikyu-spin1" alt="">
-        <img src="https://media1.tenor.com/m/cJAKpAP9gqQAAAAC/mimikyu-pokemon.gif" id="mimikyu-spin2" alt="">
-        <img src="https://media1.tenor.com/m/cJAKpAP9gqQAAAAC/mimikyu-pokemon.gif" id="mimikyu-spin3" alt="">
-        <img src="https://media1.tenor.com/m/cJAKpAP9gqQAAAAC/mimikyu-pokemon.gif" id="mimikyu-spin4" alt="">
-        <img src="https://media1.tenor.com/m/cJAKpAP9gqQAAAAC/mimikyu-pokemon.gif" id="mimikyu-spin5" alt="">
-        <img src="https://media1.tenor.com/m/cJAKpAP9gqQAAAAC/mimikyu-pokemon.gif" id="mimikyu-spin6" alt="">
-        <img src="https://media1.tenor.com/m/cJAKpAP9gqQAAAAC/mimikyu-pokemon.gif" id="mimikyu-spin7" alt="">
-        <img src="https://media1.tenor.com/m/cJAKpAP9gqQAAAAC/mimikyu-pokemon.gif" id="mimikyu-spin8" alt="">
-        <img src="https://media1.tenor.com/m/cJAKpAP9gqQAAAAC/mimikyu-pokemon.gif" id="mimikyu-spin9" alt="">
-        <img src="https://media1.tenor.com/m/cJAKpAP9gqQAAAAC/mimikyu-pokemon.gif" id="mimikyu-spin10" alt="">
-        <img src="https://media1.tenor.com/m/cJAKpAP9gqQAAAAC/mimikyu-pokemon.gif" id="mimikyu-spin11" alt="">
-        <img src="https://media1.tenor.com/m/cJAKpAP9gqQAAAAC/mimikyu-pokemon.gif" id="mimikyu-spin12" alt="">
-        <img src="https://media1.tenor.com/m/cJAKpAP9gqQAAAAC/mimikyu-pokemon.gif" id="mimikyu-spin13" alt="">
-        <img src="https://media1.tenor.com/m/cJAKpAP9gqQAAAAC/mimikyu-pokemon.gif" id="mimikyu-spin14" alt="">
-        <a href="index.html" id="Back-Home1"> Back Home</a>
-    </body>
+        <body>
+            <img src="https://media1.tenor.com/m/cJAKpAP9gqQAAAAC/mimikyu-pokemon.gif" id="mimikyu-spin1" alt="">
+            <img src="https://media1.tenor.com/m/cJAKpAP9gqQAAAAC/mimikyu-pokemon.gif" id="mimikyu-spin2" alt="">
+            <img src="https://media1.tenor.com/m/cJAKpAP9gqQAAAAC/mimikyu-pokemon.gif" id="mimikyu-spin3" alt="">
+            <img src="https://media1.tenor.com/m/cJAKpAP9gqQAAAAC/mimikyu-pokemon.gif" id="mimikyu-spin4" alt="">
+            <img src="https://media1.tenor.com/m/cJAKpAP9gqQAAAAC/mimikyu-pokemon.gif" id="mimikyu-spin5" alt="">
+            <img src="https://media1.tenor.com/m/cJAKpAP9gqQAAAAC/mimikyu-pokemon.gif" id="mimikyu-spin6" alt="">
+            <img src="https://media1.tenor.com/m/cJAKpAP9gqQAAAAC/mimikyu-pokemon.gif" id="mimikyu-spin7" alt="">
+            <img src="https://media1.tenor.com/m/cJAKpAP9gqQAAAAC/mimikyu-pokemon.gif" id="mimikyu-spin8" alt="">
+            <img src="https://media1.tenor.com/m/cJAKpAP9gqQAAAAC/mimikyu-pokemon.gif" id="mimikyu-spin9" alt="">
+            <img src="https://media1.tenor.com/m/cJAKpAP9gqQAAAAC/mimikyu-pokemon.gif" id="mimikyu-spin10" alt="">
+            <img src="https://media1.tenor.com/m/cJAKpAP9gqQAAAAC/mimikyu-pokemon.gif" id="mimikyu-spin11" alt="">
+            <img src="https://media1.tenor.com/m/cJAKpAP9gqQAAAAC/mimikyu-pokemon.gif" id="mimikyu-spin12" alt="">
+            <img src="https://media1.tenor.com/m/cJAKpAP9gqQAAAAC/mimikyu-pokemon.gif" id="mimikyu-spin13" alt="">
+            <img src="https://media1.tenor.com/m/cJAKpAP9gqQAAAAC/mimikyu-pokemon.gif" id="mimikyu-spin14" alt="">
+            <a href="index.html" id="Back-Home1"> Back Home</a>
+            <script>
+            document.getElementById("lavander-town").volume = 0.3; // Sets volume to 50%
+             const audio = document.getElementById('lavander-town');
+            const savedTime = localStorage.getItem('audio-time');
+            if (savedTime) {
+            audio.currentTime = parseFloat(savedTime);
+             }
+             audio.addEventListener('timeupdate', function () {
+             localStorage.setItem('audio-time', audio.currentTime);
+             });
+        </script>
+        </body>
 </html>

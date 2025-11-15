@@ -9,6 +9,18 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <h1>Welcome to the <i>Pokemon</i> Guide!</h1>
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/1200px-International_Pok%C3%A9mon_logo.svg.png" alt="">
+        <audio id="pokemon-song1" src="Pokémon.1.mp4" autoplay></audio>
+        <script>
+  document.getElementById("pokemon-song1").volume = 0.3; // Sets volume to 50%
+   const audio = document.getElementById('pokemon-song1');
+            const savedTime = localStorage.getItem('audio-time');
+            if (savedTime) {
+            audio.currentTime = parseFloat(savedTime);
+             }
+             audio.addEventListener('timeupdate', function () {
+             localStorage.setItem('audio-time', audio.currentTime);
+             });
+</script>
     </head>
     <body>
         <p>This specific area will cover the first <ins>151</ins> <i>Pokemon</i> <br> And The <ins>Kanto Region</ins> as a whole!</p> 

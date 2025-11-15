@@ -2,6 +2,7 @@ body {
     text-align: center;
     font-family: 'Jersey 10';
     background-color: darkcyan;
+    img { width: 250px; height: 250px; object-fit: cover; }
    }
    h1 {
     font-size: 100px;
@@ -12,9 +13,14 @@ body {
    #Kanto-Map {
     width: 20%;
    }
-   #Bulbasaur-gif {
-    width: 15%;
-   }
-   #charmander-gif{
-    width: 15%
-   }
+   .image-pattern {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 images per row */
+  gap: 16px; /* space between images */
+}
+.image-pattern img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+  
